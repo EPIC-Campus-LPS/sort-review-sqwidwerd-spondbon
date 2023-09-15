@@ -1,12 +1,27 @@
 import static java.lang.System.arraycopy;
 
+/**
+ *
+ * @author Cardin N Ben A
+ * @version 3.0, 09/15/2023
+ */
 public class QuadSorts {
 
+    /**
+     * This method uses groups of two elements at the same time and sorts each individual one to provide a finished sorted array.
+     *
+     * @param arr the original array
+     * @return a sorted array
+     */
+
     public static int[] bubbleSort(int[] arr){
+
         int[] tarr = arr;
+        //loops n^2 through the array, worst case scenario it takes all of these times, but otherwise it just loops through and tests
         for(int j = 0; j < tarr.length; j++){
             for(int i = 1; i < tarr.length; i++) {
 
+                //tests if the two values being targeted are sorted themselves, if they aren't it switches them
                 if(tarr[i-1] > tarr[i]){
                     int temp = tarr[i];
                     tarr[i] = tarr[i-1];
@@ -19,21 +34,29 @@ public class QuadSorts {
         return tarr;
     }
 
+    /**
+     * This method finds the smallest of each value and puts it at the front until the array is completely sorted.
+     *
+     * @param arr the original array
+     * @return a sorted array
+     */
     public static int[] selectionSort(int[] arr) {
 
+        //creates temporary array so as not to edit original array
         int[] tarr = arr;
 
+        //loops n^2 through the array
         for(int i = 0; i < tarr.length; i++) {
             int mindex = i;
-
             for(int j = i; j < tarr.length; j++) {
 
+                //updating smallest value
                 if(tarr[j] < tarr[mindex]) {
                     mindex = j;
                 }
 
             }
-
+            //switches smallest value position
             int temp = tarr[i];
             tarr[i] = tarr[mindex];
             tarr[mindex] = temp;
@@ -42,6 +65,12 @@ public class QuadSorts {
         return tarr;
     }
 
+    /**
+     * This method takes each individual value and finds a place for it among the rest of the values.
+     *
+     * @param arr the original array
+     * @return a sorted array
+     */
     public static int[] insertionSort(int[] arr) {
 
         int[] tarr = arr;
@@ -69,6 +98,12 @@ public class QuadSorts {
         return tarr;
     }
 
+    /**
+     * This method splits the array into halves recursively until you can't split each array more, then it puts the arrays back together and sorts them at the same time as it places them back together.
+     *
+     * @param arr the original array
+     * @return a sorted array
+     */
     public static int[] mergeSort(int[] arr){
 
         if (arr.length <= 1){
@@ -94,10 +129,19 @@ public class QuadSorts {
         return what;
     }
 
-    //takes in two values and creates a new sorted array
+    /**
+     * This is a helper method for the mergeSort method that sorts the individual pieces to be merged and merges them together.
+     *
+     * @param arr the original array
+     * @param left the left side of the array to be sorted
+     * @param right the right side of the array to be sorted
+     * @return the merged array out of the left and right
+     */
     public static int[] merge(int[] arr, int[] left, int[] right){
 
+        // writes a new sorted array based on the indexes of the smaller arrays
         int leftIndex = 0, rightIndex = 0, sortedIndex = 0;
+
         while (leftIndex < left.length && rightIndex < right.length) {
             if (left[leftIndex] < right[rightIndex]) {
 
@@ -110,12 +154,14 @@ public class QuadSorts {
             }
         }
 
+        // adds any excess values from the left array
         while (leftIndex < left.length){
 
             arr[sortedIndex++] = left[leftIndex++];
 
         }
 
+        // adds any excess values from the right array
         while (rightIndex < right.length){
 
             arr[sortedIndex++] = right[rightIndex++];
