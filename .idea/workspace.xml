@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c731394b-3b8b-4b3f-9959-7ab0a6255d3c" name="Changes" comment="added all sort methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuadSorts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuadSorts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SortingTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SortingTester.java" afterDir="false" />
-    </list>
+    <list default="true" id="c731394b-3b8b-4b3f-9959-7ab0a6255d3c" name="Changes" comment="added javadoc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +60,111 @@
       <option name="project" value="LOCAL" />
       <updated>1694794850428</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797584950</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797584950</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797598534</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797598534</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797599752</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797599752</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797599893</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797599893</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797600085</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797600085</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797600373</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797600373</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797600648</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797600648</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797600884</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797600884</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797601461</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797601461</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797602088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797602088</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797602242</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797602242</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797602478</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797602478</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added javadoc">
+      <option name="closed" value="true" />
+      <created>1694797632210</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1694797632210</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +181,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LETS GOOOOO" />
     <MESSAGE value="added all sort methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="added all sort methods" />
+    <MESSAGE value="added javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="added javadoc" />
   </component>
 </project>
