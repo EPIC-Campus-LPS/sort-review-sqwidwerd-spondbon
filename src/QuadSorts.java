@@ -1,3 +1,5 @@
+import static java.lang.System.arraycopy;
+
 public class QuadSorts {
 
     public static int[] bubbleSort(int[] arr){
@@ -60,20 +62,66 @@ public class QuadSorts {
                     } else if (tarr[back-1] < obj) {
                         tarr[back] = obj;
                     }
-
                     //if the previous item is less than the value-in-question then let it be
-
                 }
-
             }
-
-
-
         }
         return tarr;
-
     }
 
+    public static int[] mergeSort(int[] arr){
 
+        if (arr.length <= 1){
+            return arr;
+        }
 
+        //finds the midpoint of the array
+        int midIndex = arr.length / 2;
+
+        //creates two empty arrays based on the subsections
+        int[] left = new int[midIndex];
+        int[] right = new int[arr.length - midIndex];
+
+        //copies the values of the arrays into the subsections
+        arraycopy(arr, 0, left, 0, midIndex);
+        arraycopy(arr, midIndex, right, 0, arr.length - midIndex);
+
+        //recursively calls upon itself to keep dividing the arrays in half
+        left = mergeSort(left);
+        right = mergeSort(right);
+
+        int[] what = merge(arr, left, right);
+        return what;
+    }
+
+    //takes in two values and creates a new sorted array
+    public static int[] merge(int[] arr, int[] left, int[] right){
+
+        int leftIndex = 0, rightIndex = 0, sortedIndex = 0;
+        while (leftIndex < left.length && rightIndex < right.length) {
+            if (left[leftIndex] < right[rightIndex]) {
+
+                arr[sortedIndex++] = left[leftIndex++];
+
+            } else {
+
+                arr[sortedIndex++] = right[rightIndex++];
+
+            }
+        }
+
+        while (leftIndex < left.length){
+
+            arr[sortedIndex++] = left[leftIndex++];
+
+        }
+
+        while (rightIndex < right.length){
+
+            arr[sortedIndex++] = right[rightIndex++];
+
+        }
+
+        return arr;
+    }
 }

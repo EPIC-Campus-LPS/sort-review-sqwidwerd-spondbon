@@ -25,7 +25,7 @@ public class SortingTester {
             QuadSorts.bubbleSort(testCases[0]);
             QuadSorts.selectionSort(testCases[1]);
             QuadSorts.insertionSort(testCases[2]);
-           // QuadSorts.mergeSort(testCases[3]);
+            QuadSorts.mergeSort(testCases[3]);
 
             //Check if it worked
             if(inOrder(testCases[0]) && sameNumbers(originalList, testCases[0])){
