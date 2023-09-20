@@ -1,5 +1,5 @@
 //Be sure to add your documentation here.
-
+/*
 public class SortingTester {
 
     public static void main(String[] args) {
@@ -52,7 +52,7 @@ public class SortingTester {
 
     /**
      * This function will return a deep copy of the given array
-     */
+
     public static int[] copyArray(int[] arr){
         int[] copy = new int[arr.length];
         for(int i = 0; i < arr.length; i++)
@@ -64,7 +64,7 @@ public class SortingTester {
     /**
      * This function will determine whether the two passed arrays
      * (one sorted one not) have the same number of each number.
-     */
+     *
     public static boolean sameNumbers(int[] arr1, int[] arr2){
         int[] fTable1 = frequencyTable(arr1);
         int[] fTable2 = frequencyTable(arr2);
@@ -100,10 +100,12 @@ public class SortingTester {
         return fTable;
     }
 
+
+ */
     /**
      * This function will return whether the given array
      * is in non-decreasing order.
-     */
+     *
     public static boolean inOrder(int[] arr){
         for(int i = 0; i < arr.length - 1; i++)
             if(arr[i] > arr[i + 1])
@@ -112,3 +114,4 @@ public class SortingTester {
     }
 
 }
+*/
